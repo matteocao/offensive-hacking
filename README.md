@@ -2,6 +2,10 @@
 
 This readme is to run the basic set of offensive security tools inside different dockers and to familiarise the reader with it.
 
+# Disclaimer
+
+Running unauthorized attacks to public or private servers is illegal. The content of this repository is for educational purpose only. There are many websites that allow you to test and challege your newly acquireds skills, such as [HackTheBox](https://www.hackthebox.eu/) or [scanme](http://scanme.nmap.org/). Please use those or your private/simulated ones.
+
 # How to install it
 
 ## Basic mode (a bit limited...)
