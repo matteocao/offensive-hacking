@@ -1,0 +1,15 @@
+[submodule "BirDuster"]
+	path = BirDuster
+	url = https://github.com/ytisf/BirDuster.git
+[submodule "hashcracker"]
+	path = hashcracker
+	url = https://github.com/Bot3939/hashcracker.git
+[submodule "Responder"]
+	path = Responder
+	url = https://github.com/lgandx/Responder
+[submodule "SecLists"]
+	path = SecLists
+	url = https://github.com/danielmiessler/SecLists.git
+[submodule "sqlmap"]
+	path = sqlmap
+	url = https://github.com/sqlmapproject/sqlmap
